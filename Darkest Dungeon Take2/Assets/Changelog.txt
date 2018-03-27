@@ -1,0 +1,16 @@
+momentaner Stand: 25_03_18
+neuer Befehl: Str+Umschalt+a aktiviert/deaktiviert ausgewählte objekte
+- esc öffnet PopUpMenu
+	- Settings: Mastervolume
+	  zum Testen in MainCamera soundlistener mit musik
+	- continue schließt PopUpMenu
+	- return to MM schließt Programm (nur in builds)
+- chooseCharacter (nur manuell aktivierbar)
+	- auf charactersymbol klicken zum auswählen
+	- auf klasse klicken zum ändern
+- attackButtons
+	- auf charactersymbol klicken zum auswählen
+	- auf Attacke klicken zum angreifen
+	- greift selected enemy an
+
+	Nochmal hochladen...

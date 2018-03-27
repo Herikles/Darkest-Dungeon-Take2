@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darkest Dungeon", "Darkest Dungeon.csproj", "{782570B9-D89D-F8D2-37EA-64F1CDC6C6CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darkest Dungeon.Editor", "Darkest Dungeon.Editor.csproj", "{2E7328A8-44B5-11C9-F783-F82EC6B6916B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{782570B9-D89D-F8D2-37EA-64F1CDC6C6CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{782570B9-D89D-F8D2-37EA-64F1CDC6C6CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{782570B9-D89D-F8D2-37EA-64F1CDC6C6CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{782570B9-D89D-F8D2-37EA-64F1CDC6C6CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E7328A8-44B5-11C9-F783-F82EC6B6916B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E7328A8-44B5-11C9-F783-F82EC6B6916B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E7328A8-44B5-11C9-F783-F82EC6B6916B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E7328A8-44B5-11C9-F783-F82EC6B6916B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
