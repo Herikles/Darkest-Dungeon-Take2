@@ -18,7 +18,13 @@ public class Items : MonoBehaviour {
     public int tier3_minDamage = 5;
     public int tier3_maxDamage = 7;
 
+    //const string glyphs = "abcdefghijklmnopqrstuvwxyz";
+    const string glyphs = "acdelopsuil";
+    int minNameLength = 4;
+    int maxNameLength = 10;
+
     public void SetWeapon(int tier) {
+        name = "";
         switch (tier) {
             case 1:
                 damage = dice.RollDice(tier1_minDamage, tier1_maxDamage);
@@ -32,6 +38,11 @@ public class Items : MonoBehaviour {
                 damage = dice.RollDice(tier3_minDamage, tier3_maxDamage);
                 Debug.Log("Tier 3 Weapon set!");
                 break;
+        }
+        name += tier;
+        int nameLength = Random.Range(minNameLength, maxNameLength);
+        for (int i = 0; i < nameLength; i++) {
+            name += glyphs[Random.Range(0, glyphs.Length)];
         }
     }
 

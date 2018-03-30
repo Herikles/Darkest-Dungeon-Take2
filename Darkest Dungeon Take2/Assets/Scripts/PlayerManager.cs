@@ -25,6 +25,8 @@ public class PlayerManager : MonoBehaviour {
     public int selectedSide = 0;
     public int prevSelectedSide = 0;
 
+    public int damage;
+
     void Start() {
         image = characterIcon.GetComponent<Image>();
         image.sprite = races.idleSprites[selected];
@@ -33,9 +35,14 @@ public class PlayerManager : MonoBehaviour {
     }
 	
 	void Update () {
+        damage = character[selected].damage + character[selected].GetComponent<CarriedItem>().weaponDamage;
+        WhichSelected();
+        
+	}
+
+    public void WhichSelected() {
         // TODO: Character nach anwählen der gegnerseite nicht erneut anwählbar. 
         // Erst nach anwählen eines anderen characters möglich.
-
         selectedEnemy = enemyManager.selectedEnemy;
         if (selected != prevSelected) {                                 //Grund
             character[selected].border.SetActive(true);
@@ -51,9 +58,10 @@ public class PlayerManager : MonoBehaviour {
             prevSelectedEnemy = enemyManager.selectedEnemy;
             selectedSide = 1;
         }
-	}
+    }
 
     public void Attack(int attackNum) {
+        damage = character[selected].damage + character[selected].GetComponent<CarriedItem>().weaponDamage;
         if (Hit() == true) {
             switch (attackNum) {
                 case 0:
@@ -73,9 +81,7 @@ public class PlayerManager : MonoBehaviour {
     }
 
     public void Attack1() {
-        //Attack1 stuff
         Debug.Log("Character " + selected + " attacks Enemy " + selectedEnemy + " with Attack 1");
-        int damage = 2;
         enemyCharacter[selectedEnemy].health -= damage;
     }
 
