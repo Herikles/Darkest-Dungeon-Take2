@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darkest Dungeon Take2", "Darkest Dungeon Take2.csproj", "{27E5CB7D-106F-A5F7-5073-704A22367B1C}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darkest Dungeon Take2", "Assembly-CSharp.csproj", "{5B1A4B2B-4943-F703-384A-8ADEC75E6413}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darkest Dungeon Take2.Editor", "Darkest Dungeon Take2.Editor.csproj", "{454B0314-2BB6-C30E-89B3-6D2A0697941D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Darkest Dungeon Take2", "Assembly-CSharp-Editor.csproj", "{BB911C87-7430-E501-1543-885848BDE6AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{27E5CB7D-106F-A5F7-5073-704A22367B1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27E5CB7D-106F-A5F7-5073-704A22367B1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27E5CB7D-106F-A5F7-5073-704A22367B1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27E5CB7D-106F-A5F7-5073-704A22367B1C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{454B0314-2BB6-C30E-89B3-6D2A0697941D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{454B0314-2BB6-C30E-89B3-6D2A0697941D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{454B0314-2BB6-C30E-89B3-6D2A0697941D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{454B0314-2BB6-C30E-89B3-6D2A0697941D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B1A4B2B-4943-F703-384A-8ADEC75E6413}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B1A4B2B-4943-F703-384A-8ADEC75E6413}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B1A4B2B-4943-F703-384A-8ADEC75E6413}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B1A4B2B-4943-F703-384A-8ADEC75E6413}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB911C87-7430-E501-1543-885848BDE6AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB911C87-7430-E501-1543-885848BDE6AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB911C87-7430-E501-1543-885848BDE6AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB911C87-7430-E501-1543-885848BDE6AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

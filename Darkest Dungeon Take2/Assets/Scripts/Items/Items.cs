@@ -6,7 +6,7 @@ public class Items : MonoBehaviour {
 
     public Dice dice;
 
-    public string name = "banana";
+	public string itemName = "Banana";
     public int damage;
     
     public int tier1_minDamage = 1;
@@ -24,30 +24,30 @@ public class Items : MonoBehaviour {
     int maxNameLength = 10;
 
     public void SetWeapon(int tier) {
-        name = "";
+		itemName = "";
         switch (tier) {
             case 1:
                 damage = dice.RollDice(tier1_minDamage, tier1_maxDamage);
-                Debug.Log("Tier 1 Weapon set!");
+                //Debug.Log("Tier 1 Weapon set!");
                 break;
             case 2:
                 damage = dice.RollDice(tier2_minDamage, tier2_maxDamage);
-                Debug.Log("Tier 2 Weapon set!");
+                //Debug.Log("Tier 2 Weapon set!");
                 break;
             case 3:
                 damage = dice.RollDice(tier3_minDamage, tier3_maxDamage);
-                Debug.Log("Tier 3 Weapon set!");
+                //Debug.Log("Tier 3 Weapon set!");
                 break;
         }
-        name += tier;
+		itemName += tier;
         int nameLength = Random.Range(minNameLength, maxNameLength);
         for (int i = 0; i < nameLength; i++) {
-            name += glyphs[Random.Range(0, glyphs.Length)];
+			itemName += glyphs[Random.Range(0, glyphs.Length)];
         }
     }
 
     void Start() {
-
+		
     }
 
     void Update() {
