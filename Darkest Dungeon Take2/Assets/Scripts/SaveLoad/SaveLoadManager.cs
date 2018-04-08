@@ -9,17 +9,17 @@ public static class SaveLoadManager {
 
 	public static void SavePlayer(Character[] player, int saveslot) {
 		BinaryFormatter bf = new BinaryFormatter ();
-		FileStream stream0 = new FileStream (Application.persistentDataPath + "/saveslot" + saveslot.ToString() +"/player0.sav", FileMode.Create);
+		FileStream stream = new FileStream (Application.persistentDataPath + "/slot" + saveslot.ToString() + "Player.sav", FileMode.Create);
 
-		PlayerData data0 = new PlayerData (player);
+		PlayerData data = new PlayerData (player);
 
-		bf.Serialize (stream0, data0);
-		stream0.Close ();
+		bf.Serialize (stream, data);
+		stream.Close ();
 	}
 
 	public static void SaveEnemy(EnemyCharacter[] enemy, int saveslot) {
 		BinaryFormatter bf = new BinaryFormatter ();
-		FileStream stream = new FileStream (Application.persistentDataPath + "/saveslot" + saveslot.ToString() +"/enemy.sav", FileMode.Create);
+		FileStream stream = new FileStream (Application.persistentDataPath + "/slot" + saveslot.ToString() + "Enemy.sav", FileMode.Create);
 
 		EnemyData data = new EnemyData (enemy);
 
@@ -29,7 +29,7 @@ public static class SaveLoadManager {
 
 	public static void SaveGameData(FightManager fightManager, int saveslot) {
 		BinaryFormatter bf = new BinaryFormatter ();
-		FileStream stream = new FileStream (Application.persistentDataPath + "/saveslot" + saveslot.ToString() +"/GameData.sav", FileMode.Create);
+		FileStream stream = new FileStream (Application.persistentDataPath + "/slot" + saveslot.ToString() + "GameData.sav", FileMode.Create);
 		GameProgress data = new GameProgress (fightManager);
 		bf.Serialize (stream, data);
 		stream.Close();
@@ -37,21 +37,21 @@ public static class SaveLoadManager {
 	}
 
 	public static float[] LoadPlayer(int position, int saveslot) {
-		if (File.Exists (Application.persistentDataPath + "/saveslot" + saveslot.ToString() +"/player0.sav")) {
+		if (File.Exists (Application.persistentDataPath + "/slot" + saveslot.ToString() + "Player.sav")) {
 			BinaryFormatter bf = new BinaryFormatter ();
-			FileStream stream0 = new FileStream (Application.persistentDataPath + "/saveslot" + saveslot.ToString() + "/player0.sav", FileMode.Open);
+			FileStream stream = new FileStream (Application.persistentDataPath + "/slot" + saveslot.ToString() + "Player.sav", FileMode.Open);
 
-			PlayerData data0 = bf.Deserialize (stream0) as PlayerData;
+			PlayerData data = bf.Deserialize (stream) as PlayerData;
 
-			stream0.Close ();
+			stream.Close ();
 			if (position == 0)
-				return data0.stats0;
+				return data.stats0;
 			if (position == 1)
-				return data0.stats1;
+				return data.stats1;
 			if (position == 2)
-				return data0.stats2;
+				return data.stats2;
 			if (position == 3)
-				return data0.stats3;
+				return data.stats3;
 			else
 				return new float[6];
 			
@@ -61,9 +61,9 @@ public static class SaveLoadManager {
 		}
 	}
 	public static float[] LoadEnemy(int position, int saveslot) {
-		if (File.Exists (Application.persistentDataPath + "/saveslot" + saveslot.ToString() +"/enemy.sav")) {
+		if (File.Exists (Application.persistentDataPath + "/slot" + saveslot.ToString() + "Enemy.sav")) {
 			BinaryFormatter bf = new BinaryFormatter ();
-			FileStream stream = new FileStream (Application.persistentDataPath + "/saveslot" + saveslot.ToString() +"/enemy.sav", FileMode.Open);
+			FileStream stream = new FileStream (Application.persistentDataPath + "/slot" + saveslot.ToString() + "Enemy.sav", FileMode.Open);
 
 			EnemyData data = bf.Deserialize (stream) as EnemyData;
 
@@ -87,9 +87,9 @@ public static class SaveLoadManager {
 	}
 
 	public static float[] LoadGameData(int saveslot) {
-		if (File.Exists (Application.persistentDataPath + "/saveslot" + saveslot.ToString() +"/GameData.sav")) {
+		if (File.Exists (Application.persistentDataPath + "/slot" + saveslot.ToString() + "GameData.sav")) {
 			BinaryFormatter bf = new BinaryFormatter ();
-			FileStream stream = new FileStream (Application.persistentDataPath + "/saveslot" + saveslot.ToString() +"/GameData.sav", FileMode.Open);
+			FileStream stream = new FileStream (Application.persistentDataPath + "/slot" + saveslot.ToString() + "GameData.sav", FileMode.Open);
 			GameProgress data = bf.Deserialize (stream) as GameProgress;
 			stream.Close ();
 
