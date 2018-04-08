@@ -29,7 +29,7 @@ public class EnemyCharacter : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		enemyIndex = Random.Range (0, 5);
+		//enemyIndex = Random.Range (0, 5);
         spriteRenderer = GetComponent<SpriteRenderer>();
         position = transform.GetSiblingIndex();
         //UpdateStats();
