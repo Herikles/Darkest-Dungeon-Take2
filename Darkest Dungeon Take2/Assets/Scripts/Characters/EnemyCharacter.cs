@@ -6,6 +6,7 @@ public class EnemyCharacter : MonoBehaviour {
 
     //public string className = "empty";
 	public int enemyIndex = 5;  //0=ass, 1=dd, 2=heal, 3=sup, 4=tank
+	int prevEnemyIndex;
     public Races races;
     public int position;
     public EnemyManager enemyManager;
@@ -36,7 +37,7 @@ public class EnemyCharacter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("r")) {
+		if (Input.GetKeyDown("r") || enemyIndex != prevEnemyIndex) {
             UpdateStats();
         }
         if (health <= 0) {
@@ -57,6 +58,8 @@ public class EnemyCharacter : MonoBehaviour {
         initiative = races.initiative;
 
         spriteRenderer.sprite = races.idleSprites[enemyIndex];
+
+		prevEnemyIndex = enemyIndex;
     }
 
     void OnMouseDown() {

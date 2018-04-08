@@ -7,6 +7,7 @@ public class Character : MonoBehaviour {
     
     //public string className = "empty";
 	public int playerIndex = 5; //0=ass, 1=dd, 2=heal, 3=sup, 4=tank
+	int prevPlayerIndex;
     public Races races;
     public int position;
     public PlayerManager playerManager;
@@ -37,7 +38,7 @@ public class Character : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown("r")) {
+		if (Input.GetKeyDown("r") || playerIndex != prevPlayerIndex) {
             UpdateStats();
         }
         if(health <= 0) {
@@ -59,6 +60,8 @@ public class Character : MonoBehaviour {
         
         spriteRenderer.sprite = races.idleSprites[playerIndex];
         playerManager.image.sprite = races.idleSprites[playerIndex];
+
+		prevPlayerIndex = playerIndex;
     }
 
     void OnMouseDown() {
