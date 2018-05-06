@@ -5,18 +5,22 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour {
 
+    [Header("Characters")]
     public GameObject[] player = new GameObject[4];
     public Character[] character = new Character[4];
 
     public GameObject[] enemy = new GameObject[4];
     public EnemyCharacter[] enemyCharacter = new EnemyCharacter[4];
-	public Races races;
 
+    [Header("Other Objects")]
+	public Races races;
+    public FightManager fightManager;
     public GameObject characterIcon;
     public Image image;
-
     public EnemyManager enemyManager;
-    public string className = "empty";
+
+    [Header("Selected")]
+    //public string className = "empty";
     public int selected = 0;
     public int selectedEnemy = 0;
     public int prevSelected = 0;
@@ -26,6 +30,10 @@ public class PlayerManager : MonoBehaviour {
     public int prevSelectedSide = 0;
 
     public int damage;
+    
+    [Header("Save System")]
+    public int saveslot = 0;
+    public Button[] setSaveslotButtons;
 
     void Start() {
         image = characterIcon.GetComponent<Image>();
@@ -128,10 +136,7 @@ public class PlayerManager : MonoBehaviour {
         }
     }
 
-	public FightManager fightManager;
 
-	public int saveslot = 0;
-	public Button[] setSaveslotButtons;
 	public void setSaveslot(int ss) {
 		for (int i = 0; i < 4; i++) {
 			if (i == ss)
