@@ -282,6 +282,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\DungeonManager.cs" />
     <Compile Include="Assets\Scripts\Characters\Character.cs" />
     <Compile Include="Assets\Scripts\Characters\EnemyCharacter.cs" />
     <Compile Include="Assets\Scripts\Characters\EnemyManager.cs" />

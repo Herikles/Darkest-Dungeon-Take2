@@ -107,7 +107,7 @@ public class GameProgress {
 
 	public GameProgress(FightManager fightManager) {
 		gameData = new float[10];
-		gameData [0] = fightManager.level;
+		gameData [0] = fightManager.wave;
 		gameData [1] = fightManager.gold;
 		gameData [2] = fightManager.volume;
 	}

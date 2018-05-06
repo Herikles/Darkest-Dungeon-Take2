@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class FightManager : MonoBehaviour {
@@ -12,38 +13,27 @@ public class FightManager : MonoBehaviour {
 
     public GameObject chooseCharacter;
     public GameObject fightSystem;
+    public GameObject levelText;
 
-    public GameObject playerManager;
-    public GameObject enemyManager;
+    public GameObject UIplayerManager;
+    public GameObject UIenemyManager;
+    public EnemyManager enemyManager;
 
-	public int level = 0;
+	public int wave = 0;
+    public int maxWave = 3;
+    public int encounter = 0;
 	public int gold = 0;
 	public float volume = 1.0f;
     
     void Start() {
-        PopUpMenuParent.SetActive(false);
-
-        chooseCharacter.SetActive(true);
-        fightSystem.SetActive(false);
-        enemyManager.SetActive(false);
-        playerManager.SetActive(true);
+        UpdateData();
     }
 
-	public void UpdateData() {
-		PopUpMenuParent.SetActive (false);
-		if (level == 0) {
-			chooseCharacter.SetActive (true);
-			fightSystem.SetActive (false);
-			enemyManager.SetActive (false);
-
-		} else if (level > 0) {
-			chooseCharacter.SetActive (false);
-			fightSystem.SetActive (true);
-			enemyManager.SetActive (true);
-		}
-	}
-    
     void Update() {
+        if (wave > 0) {
+            enemyManager.CheckDead();
+        }
+
         if (Input.GetKeyDown(KeyCode.Escape)) {
             if (PopUpMenuParent.activeSelf == true) {
                 PopUpMenuParent.SetActive(false);
@@ -57,11 +47,28 @@ public class FightManager : MonoBehaviour {
         }
     }
 
+	public void UpdateData() {
+		PopUpMenuParent.SetActive (false);
+		if (wave == 0) {
+            levelText.GetComponent<Text>().text = "Choose your Heroes!";
+			chooseCharacter.SetActive (true);
+			fightSystem.SetActive (false);
+			UIenemyManager.SetActive (false);
+            UIplayerManager.SetActive(true);
+
+		} else if (wave > 0 && wave < maxWave) {
+            levelText.GetComponent<Text>().text = "Wave " + wave;
+            chooseCharacter.SetActive (false);
+			fightSystem.SetActive (true);
+			UIenemyManager.SetActive (true);
+		} else if (wave == maxWave) {
+            levelText.GetComponent<Text>().text = "Final Wave";
+        }
+	}
+
     public void StartFight() {
-		level++;
-        chooseCharacter.SetActive(false);
-        fightSystem.SetActive(true);
-        enemyManager.SetActive(true);
+		wave++;
+        enemyManager.randomCharacters();
 		UpdateData ();
     }
 

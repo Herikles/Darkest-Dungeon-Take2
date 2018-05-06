@@ -159,7 +159,7 @@ public class PlayerManager : MonoBehaviour {
 	public void Load() {
 		
 		float[] gameStats = SaveLoadManager.LoadGameData (saveslot);
-		fightManager.level = (int)gameStats [0];
+		fightManager.wave = (int)gameStats [0];
 		fightManager.gold = (int)gameStats [1];
 		fightManager.volume = gameStats [2];
 		fightManager.UpdateData ();
