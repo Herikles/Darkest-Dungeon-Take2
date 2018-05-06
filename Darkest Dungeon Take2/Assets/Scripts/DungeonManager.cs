@@ -26,4 +26,8 @@ public class DungeonManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public int calcXP() {
+        return 10;
+    }
 }

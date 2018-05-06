@@ -282,15 +282,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\DungeonManager.cs" />
     <Compile Include="Assets\Scripts\Characters\Character.cs" />
     <Compile Include="Assets\Scripts\Characters\EnemyCharacter.cs" />
     <Compile Include="Assets\Scripts\Characters\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\Characters\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\DungeonManager.cs" />
     <Compile Include="Assets\Scripts\FightManager.cs" />
+    <Compile Include="Assets\Scripts\Indicator.cs" />
     <Compile Include="Assets\Scripts\Items\CarriedItem.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Items\Items.cs" />
+    <Compile Include="Assets\Scripts\PopUpThings.cs" />
     <Compile Include="Assets\Scripts\Races\Assassine.cs" />
     <Compile Include="Assets\Scripts\Races\DamageDealer.cs" />
     <Compile Include="Assets\Scripts\Races\Dice.cs" />

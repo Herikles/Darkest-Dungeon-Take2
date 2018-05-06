@@ -24,8 +24,13 @@ public class EnemyCharacter : MonoBehaviour {
     public float    bleedRes = 0;
     public int      initiative = 0;
 
+    bool XPgained = false;
+
     public GameObject weapon;
     public GameObject armor;
+
+    public PopUpThings popUpThings;
+    public DungeonManager dungeonManager;
 
     // Use this for initialization
     void Start () {
@@ -42,7 +47,12 @@ public class EnemyCharacter : MonoBehaviour {
         }
         if (health <= 0) {
             spriteRenderer.sprite = races.deadSprites[enemyIndex];
+            if (!XPgained) {
+                popUpThings.GainXP(dungeonManager.calcXP());
+                XPgained = true;
+            }
         }
+        else XPgained = false;
     }
 
     public void UpdateStats() {
