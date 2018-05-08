@@ -8,6 +8,8 @@ public class Indicator : MonoBehaviour {
     float duration;
     int gainedXP;
     private GUIStyle guiStyle = new GUIStyle();
+    int width = 200;
+    int height = 200;
 
     int random1, random2;
     int randomRange = 50;
@@ -36,6 +38,6 @@ public class Indicator : MonoBehaviour {
         guiStyle.fontSize = 30;
         guiStyle.normal.textColor = Color.white;
         guiStyle.alignment = TextAnchor.MiddleCenter;
-        GUI.Label(new Rect((Screen.width/2-100) + random1, (Screen.height/2-100) + random2, 200, 200), "+" + gainedXP + "XP", guiStyle);
+        GUI.Label(new Rect((Screen.width/2-width/2) + random1, (Screen.height/2-height/2) + random2, width, height), "+" + gainedXP + "XP", guiStyle);
     }
 }

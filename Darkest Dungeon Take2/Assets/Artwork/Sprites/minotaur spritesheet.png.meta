@@ -1,0 +1,195 @@
+fileFormatVersion: 2
+guid: 441058bf53208fe44a8f27d2082eb306
+timeCreated: 1525706957
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: minotaur idle
+    21300002: minotaur spritesheet_1
+    21300004: minotaur spritesheet_2
+    21300006: minotaur spritesheet_3
+    21300008: minotaur spritesheet_4
+    21300010: minotaur spritesheet_5
+    21300012: minotaur spritesheet_6
+    21300014: minotaur spritesheet_7
+    21300016: minotaur spritesheet_8
+    21300018: minotaur idle
+    21300020: minotaur spritesheet_10
+    21300022: minotaur spritesheet_11
+    21300024: minotaur spritesheet_12
+    21300026: minotaur spritesheet_13
+    21300028: minotaur hit
+    21300030: minotaur spritesheet_15
+    21300032: minotaur spritesheet_16
+    21300034: minotaur spritesheet_17
+    21300036: minotaur spritesheet_18
+    21300038: minotaur spritesheet_19
+    21300040: minotaur spritesheet_20
+    21300042: minotaur spritesheet_21
+    21300044: minotaur spritesheet_22
+    21300046: minotaur spritesheet_23
+    21300048: minotaur spritesheet_24
+    21300050: minotaur spritesheet_25
+    21300052: minotaur spritesheet_26
+    21300054: minotaur spritesheet_27
+    21300056: minotaur spritesheet_28
+    21300058: minotaur spritesheet_29
+    21300060: minotaur spritesheet_30
+    21300062: minotaur spritesheet_31
+    21300064: minotaur attack
+    21300066: minotaur spritesheet_33
+    21300068: minotaur spritesheet_34
+    21300070: minotaur spritesheet_35
+    21300072: minotaur attack
+    21300074: minotaur spritesheet_37
+    21300076: minotaur spritesheet_38
+    21300078: minotaur spritesheet_39
+    21300080: minotaur dead
+    21300082: minotaur spritesheet_41
+    21300084: minotaur spritesheet_42
+    21300086: minotaur spritesheet_43
+    21300088: minotaur spritesheet_44
+    21300090: minotaur spritesheet_45
+    21300092: minotaur spritesheet_46
+    21300094: minotaur spritesheet_47
+    21300096: minotaur spritesheet_48
+    21300098: minotaur spritesheet_49
+    21300100: minotaur spritesheet_0
+    21300102: minotaur spritesheet_36
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 12
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: minotaur idle
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 192
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: minotaur hit
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 144
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: minotaur attack
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 48
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: minotaur dead
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: minotaur
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

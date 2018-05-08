@@ -18,6 +18,7 @@ public class PlayerManager : MonoBehaviour {
     public GameObject characterIcon;
     public Image image;
     public EnemyManager enemyManager;
+    public PopUpThings popUpThings;
 
     [Header("Selected")]
     //public string className = "empty";
@@ -71,6 +72,9 @@ public class PlayerManager : MonoBehaviour {
     public void Attack(int attackNum) {
         damage = character[selected].damage + character[selected].GetComponent<CarriedItem>().weaponDamage;
         if (Hit() == true) {
+
+            popUpThings.attack(selected, selectedEnemy, true);
+
             switch (attackNum) {
                 case 0:
                     Attack1();
@@ -85,6 +89,8 @@ public class PlayerManager : MonoBehaviour {
                     Attack4();
                     break;
             }
+        } else {
+            popUpThings.attackFailed();
         }
     }
 

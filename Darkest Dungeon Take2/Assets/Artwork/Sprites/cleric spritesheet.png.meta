@@ -4,9 +4,10 @@ timeCreated: 1522061698
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: cleric spritesheet_idle
-    21300002: cleric spritesheet_dead
-    21300004: cleric spritesheet_attack
+    21300000: cleric idle
+    21300002: cleric dead
+    21300004: cleric attack
+    21300006: cleric hit
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -83,7 +84,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cleric spritesheet_idle
+      name: cleric idle
       rect:
         serializedVersion: 2
         x: 0
@@ -91,13 +92,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: cleric spritesheet_dead
+      name: cleric dead
       rect:
         serializedVersion: 2
         x: 288
@@ -105,17 +106,31 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: cleric spritesheet_attack
+      name: cleric attack
       rect:
         serializedVersion: 2
         x: 191
         y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: cleric hit
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 0
         width: 32
         height: 32
       alignment: 0
@@ -622,7 +637,7 @@ TextureImporter:
       - {x: 56, y: -32}
       - {x: 55, y: -33}
       - {x: 55, y: -35}
-  spritePackingTag: Cleric
+  spritePackingTag: cleric
   userData: 
   assetBundleName: 
   assetBundleVariant: 

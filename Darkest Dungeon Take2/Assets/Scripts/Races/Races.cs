@@ -28,6 +28,24 @@ public class Races : MonoBehaviour {
     public Sprite[] hitSprites;
     public Sprite[] deadSprites;
 
+    public Sprite GetSprite(int index, bool player, bool attacker) {
+        Sprite sprite = new Sprite();
+        if (player == true) {
+            if (attacker == true) {
+                sprite = attackSprites[index];
+            } else {
+                sprite = hitSprites[index];
+            }
+        } else {
+            if(attacker == true) {
+                sprite = attackSprites[index];
+            } else {
+                sprite = hitSprites[index];
+            }
+        }
+        return sprite;
+    }
+
     public void SetClass(int playerIndex) {
         Reroll();
 		if (playerIndex == 3) {

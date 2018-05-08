@@ -1,0 +1,194 @@
+fileFormatVersion: 2
+guid: 3194f0adc31e2284484ffe78ab75ed21
+timeCreated: 1525706778
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: DesertRogue idle
+    21300002: DesertRogue spritesheet_1
+    21300004: DesertRogue spritesheet_2
+    21300006: DesertRogue spritesheet_3
+    21300008: DesertRogue spritesheet_4
+    21300010: DesertRogue spritesheet_5
+    21300012: DesertRogue spritesheet_6
+    21300014: DesertRogue spritesheet_7
+    21300016: DesertRogue spritesheet_8
+    21300018: DesertRogue spritesheet_9
+    21300020: DesertRogue spritesheet_10
+    21300022: DesertRogue spritesheet_11
+    21300024: DesertRogue spritesheet_12
+    21300026: DesertRogue spritesheet_13
+    21300028: DesertRogue spritesheet_14
+    21300030: DesertRogue spritesheet_15
+    21300032: DesertRogue spritesheet_16
+    21300034: DesertRogue spritesheet_17
+    21300036: DesertRogue spritesheet_18
+    21300038: DesertRogue spritesheet_19
+    21300040: DesertRogue spritesheet_20
+    21300042: DesertRogue spritesheet_21
+    21300044: DesertRogue spritesheet_22
+    21300046: DesertRogue spritesheet_23
+    21300048: DesertRogue spritesheet_24
+    21300050: DesertRogue spritesheet_25
+    21300052: DesertRogue spritesheet_26
+    21300054: DesertRogue spritesheet_27
+    21300056: DesertRogue spritesheet_28
+    21300058: DesertRogue spritesheet_29
+    21300060: DesertRogue spritesheet_30
+    21300062: DesertRogue spritesheet_31
+    21300064: DesertRogue spritesheet_32
+    21300066: DesertRogue spritesheet_33
+    21300068: DesertRogue spritesheet_34
+    21300070: DesertRogue attack
+    21300072: DesertRogue spritesheet_36
+    21300074: DesertRogue spritesheet_37
+    21300076: DesertRogue spritesheet_38
+    21300078: DesertRogue spritesheet_39
+    21300080: DesertRogue spritesheet_40
+    21300082: DesertRogue spritesheet_41
+    21300084: DesertRogue spritesheet_42
+    21300086: DesertRogue spritesheet_43
+    21300088: DesertRogue spritesheet_44
+    21300090: DesertRogue spritesheet_45
+    21300092: DesertRogue spritesheet_46
+    21300094: DesertRogue spritesheet_47
+    21300096: DesertRogue spritesheet_48
+    21300098: DesertRogue dead
+    21300100: DesertRogue hit
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 12
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DesertRogue idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DesertRogue attack
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DesertRogue dead
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: DesertRogue hit
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: desertRogue
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
