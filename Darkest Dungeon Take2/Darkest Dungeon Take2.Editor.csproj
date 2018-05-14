@@ -293,6 +293,8 @@
   <ItemGroup>
     <None Include="Assets\Artwork\Sprites\Sources.txt" />
     <None Include="Assets\Changelog.txt" />
+    <None Include="Assets\Fonts\dovahkiin\Font License.txt.txt" />
+    <None Include="Assets\Fonts\savour_pinacolada\LICENSE REQUEST.txt" />
     <None Include="Assets\ToDo Liste.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

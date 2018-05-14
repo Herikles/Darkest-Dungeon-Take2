@@ -73,7 +73,7 @@ public class PlayerManager : MonoBehaviour {
         damage = character[selected].damage + character[selected].GetComponent<CarriedItem>().weaponDamage;
         if (Hit() == true) {
 
-            popUpThings.attack(selected, selectedEnemy, true);
+            popUpThings.attack(character[selected].playerIndex, enemyCharacter[selectedEnemy].enemyIndex, true);
 
             switch (attackNum) {
                 case 0:

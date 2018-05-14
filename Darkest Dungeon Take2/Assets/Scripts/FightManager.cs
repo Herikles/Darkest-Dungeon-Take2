@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 [System.Serializable]
@@ -99,5 +100,9 @@ public class FightManager : MonoBehaviour {
 			PopUpMenu.SetActive (false);
 			break;
         }
+    }
+
+    public void LoadScene(int sceneIndex) {
+        SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
     }
 }

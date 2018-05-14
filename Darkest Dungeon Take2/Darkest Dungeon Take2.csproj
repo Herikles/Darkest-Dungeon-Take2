@@ -282,19 +282,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AttackFailedIndicator.cs" />
-    <Compile Include="Assets\Scripts\AttackIndicator.cs" />
     <Compile Include="Assets\Scripts\Characters\Character.cs" />
     <Compile Include="Assets\Scripts\Characters\EnemyCharacter.cs" />
     <Compile Include="Assets\Scripts\Characters\EnemyManager.cs" />
     <Compile Include="Assets\Scripts\Characters\PlayerManager.cs" />
     <Compile Include="Assets\Scripts\DungeonManager.cs" />
     <Compile Include="Assets\Scripts\FightManager.cs" />
-    <Compile Include="Assets\Scripts\Indicator.cs" />
     <Compile Include="Assets\Scripts\Items\CarriedItem.cs" />
     <Compile Include="Assets\Scripts\Items\Item.cs" />
     <Compile Include="Assets\Scripts\Items\Items.cs" />
-    <Compile Include="Assets\Scripts\PopUpThings.cs" />
+    <Compile Include="Assets\Scripts\PopUps\AttackFailedIndicator.cs" />
+    <Compile Include="Assets\Scripts\PopUps\AttackIndicator.cs" />
+    <Compile Include="Assets\Scripts\PopUps\Indicator.cs" />
+    <Compile Include="Assets\Scripts\PopUps\PopUpThings.cs" />
     <Compile Include="Assets\Scripts\Races\Assassine.cs" />
     <Compile Include="Assets\Scripts\Races\DamageDealer.cs" />
     <Compile Include="Assets\Scripts\Races\Dice.cs" />
@@ -303,10 +303,13 @@
     <Compile Include="Assets\Scripts\Races\Support.cs" />
     <Compile Include="Assets\Scripts\Races\Tank.cs" />
     <Compile Include="Assets\Scripts\SaveLoad\SaveLoadManager.cs" />
+    <Compile Include="Assets\SetScene.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Artwork\Sprites\Sources.txt" />
     <None Include="Assets\Changelog.txt" />
+    <None Include="Assets\Fonts\dovahkiin\Font License.txt.txt" />
+    <None Include="Assets\Fonts\savour_pinacolada\LICENSE REQUEST.txt" />
     <None Include="Assets\ToDo Liste.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

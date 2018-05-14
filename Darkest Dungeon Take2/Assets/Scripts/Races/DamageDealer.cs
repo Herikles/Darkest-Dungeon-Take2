@@ -16,6 +16,7 @@ public class DamageDealer : MonoBehaviour {
     public float stunRes;
     public float bleedRes;
     public int initiative;
+    public int[] range = new int[4] { 0, 0, 0, 0 };
 
 
     void Start() {

@@ -11,6 +11,8 @@ public class AttackIndicator : MonoBehaviour {
     public int enemyIndex;
     public bool attackSide;         //true = player, false = enemy
 
+    public float movementSpeed = 1.0f;
+
     public SpriteRenderer character;
     public SpriteRenderer enemy;
 
@@ -39,5 +41,6 @@ public class AttackIndicator : MonoBehaviour {
         if (Time.time - startTime > duration) {
             Destroy(this.gameObject);
         }
+        character.gameObject.transform.Translate(movementSpeed*Time.deltaTime, 0.0f, 0.0f);
     }
 }

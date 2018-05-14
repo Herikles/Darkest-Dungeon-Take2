@@ -23,6 +23,8 @@ public class Races : MonoBehaviour {
     public float bleedRes;
     public int initiative;
 
+    public int[] range = new int[4];
+
     public Sprite[] idleSprites;
     public Sprite[] attackSprites;
     public Sprite[] hitSprites;
@@ -57,6 +59,10 @@ public class Races : MonoBehaviour {
             stunRes = support.stunRes;
             bleedRes = support.bleedRes;
             initiative = support.initiative;
+            for (int i = 0; i < 4; i++) {
+                range[i] = support.range[i];
+                Debug.Log("support " + i + ": " + support.range[i]);
+            }
         }
 		else if (playerIndex == 4) {
             health = tank.health;

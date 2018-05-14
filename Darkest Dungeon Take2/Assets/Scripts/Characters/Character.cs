@@ -28,10 +28,13 @@ public class Character : MonoBehaviour {
     public float    bleedRes =   0;              //0-1
     public int      initiative = 0;
     public int      position;
+    public int[] range = new int[4];
 
+    /*
     [Header("Equipped stuff")]
     public GameObject weapon;
     public GameObject armorObject;
+    */
     
 
 	// Use this for initialization
@@ -63,6 +66,10 @@ public class Character : MonoBehaviour {
         stunRes = races.stunRes;
         bleedRes = races.bleedRes;
         initiative = races.initiative;
+
+        for (int i = 0; i < 4; i++) {
+            range[i] = races.range[i];
+        }
         
         spriteRenderer.sprite = races.idleSprites[playerIndex];
         playerManager.image.sprite = races.idleSprites[playerIndex];
