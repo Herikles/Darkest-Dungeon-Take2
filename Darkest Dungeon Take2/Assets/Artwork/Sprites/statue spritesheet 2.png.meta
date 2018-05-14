@@ -3,7 +3,30 @@ guid: 7f55a815f95240541ad70d4a5af65f73
 timeCreated: 1522063139
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: statue spritesheet 2_0
+    21300002: statue spritesheet 2_1
+    21300004: statue spritesheet 2_2
+    21300006: statue2 idle
+    21300008: statue spritesheet 2_4
+    21300010: statue spritesheet 2_5
+    21300012: statue spritesheet 2_6
+    21300014: statue spritesheet 2_7
+    21300016: statue spritesheet 2_8
+    21300018: statue spritesheet 2_9
+    21300020: statue spritesheet 2_10
+    21300022: statue spritesheet 2_11
+    21300024: statue spritesheet 2_12
+    21300026: statue spritesheet 2_13
+    21300028: statue2 attack
+    21300030: statue spritesheet 2_15
+    21300032: statue spritesheet 2_16
+    21300034: statue spritesheet 2_17
+    21300036: statue2 hit
+    21300038: statue spritesheet 2_19
+    21300040: statue spritesheet 2_20
+    21300042: statue spritesheet 2_21
+    21300044: statue2 dead
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -78,7 +101,63 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: statue2 idle
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: statue2 attack
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: statue2 hit
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: statue2 dead
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: statue 2

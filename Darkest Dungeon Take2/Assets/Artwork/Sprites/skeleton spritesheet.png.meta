@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: 8491d2e110ff8514694ca78dcc99a3e3
+timeCreated: 1525707037
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: skeleton idle
+    21300002: skeleton spritesheet_1
+    21300004: skeleton spritesheet_2
+    21300006: skeleton spritesheet_3
+    21300008: skeleton spritesheet_4
+    21300010: skeleton spritesheet_5
+    21300012: skeleton spritesheet_6
+    21300014: skeleton spritesheet_7
+    21300016: skeleton spritesheet_8
+    21300018: skeleton spritesheet_9
+    21300020: skeleton spritesheet_10
+    21300022: skeleton spritesheet_11
+    21300024: skeleton spritesheet_12
+    21300026: skeleton hit
+    21300028: skeleton spritesheet_14
+    21300030: skeleton spritesheet_15
+    21300032: skeleton spritesheet_16
+    21300034: skeleton spritesheet_17
+    21300036: skeleton spritesheet_18
+    21300038: skeleton spritesheet_19
+    21300040: skeleton spritesheet_20
+    21300042: skeleton spritesheet_21
+    21300044: skeleton spritesheet_22
+    21300046: skeleton spritesheet_23
+    21300048: skeleton spritesheet_24
+    21300050: skeleton spritesheet_25
+    21300052: skeleton spritesheet_26
+    21300054: skeleton spritesheet_27
+    21300056: skeleton spritesheet_28
+    21300058: skeleton spritesheet_29
+    21300060: skeleton spritesheet_30
+    21300062: skeleton spritesheet_31
+    21300064: skeleton spritesheet_32
+    21300066: skeleton spritesheet_33
+    21300068: skeleton spritesheet_34
+    21300070: skeleton attack
+    21300072: skeleton spritesheet_36
+    21300074: skeleton spritesheet_37
+    21300076: skeleton spritesheet_38
+    21300078: skeleton spritesheet_39
+    21300080: skeleton spritesheet_40
+    21300082: skeleton spritesheet_41
+    21300084: skeleton spritesheet_42
+    21300086: skeleton spritesheet_43
+    21300088: skeleton spritesheet_44
+    21300090: skeleton spritesheet_45
+    21300092: skeleton spritesheet_46
+    21300094: skeleton spritesheet_47
+    21300096: skeleton spritesheet_48
+    21300098: skeleton dead
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 12
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: skeleton idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton hit
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton attack
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: skeleton dead
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: skeleton
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

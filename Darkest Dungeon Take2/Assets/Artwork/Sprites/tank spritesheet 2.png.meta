@@ -4,10 +4,10 @@ timeCreated: 1522063016
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: tank 2 idle
-    21300002: tank 2 attack
-    21300004: tank 2 dead
-    21300006: tank 2 hit
+    21300000: tank2 idle
+    21300002: tank2 attack
+    21300004: tank2 dead
+    21300006: tank2 hit
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tank 2 idle
+      name: tank2 idle
       rect:
         serializedVersion: 2
         x: 0
@@ -92,13 +92,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tank 2 attack
+      name: tank2 attack
       rect:
         serializedVersion: 2
         x: 192
@@ -106,13 +106,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tank 2 dead
+      name: tank2 dead
       rect:
         serializedVersion: 2
         x: 288
@@ -120,13 +120,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: tank 2 hit
+      name: tank2 hit
       rect:
         serializedVersion: 2
         x: 94
@@ -134,7 +134,7 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 77fe9f533d217ac4cac02b85f795ab07
+timeCreated: 1526213891
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Make Magic Happen
+  fontNames:
+  - Make Magic Happen
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Support : MonoBehaviour {
 
     public Dice dice;
@@ -15,6 +16,7 @@ public class Support : MonoBehaviour {
     public float    stunRes;
     public float    bleedRes;
     public int      initiative;
+    public int[] range = new int[4] { 0, 0, 0, 0 };
 
 
     void Start() {
@@ -27,6 +29,7 @@ public class Support : MonoBehaviour {
         stunRes = 0.60f;
         bleedRes = 0.70f;
         initiative = 8 + dice.RollDice(4);
+        range = new int[4] {1,1,1,1};
     }
 
     public void Reroll() {

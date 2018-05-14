@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 4743f4b87e8afaa46987be9342ee8d0f
+timeCreated: 1526213890
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Shaka Pow Hollow
+  fontNames:
+  - Shaka Pow Hollow
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
