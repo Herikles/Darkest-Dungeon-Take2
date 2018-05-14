@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Tank : MonoBehaviour {
 
     public Dice dice;
@@ -14,7 +15,8 @@ public class Tank : MonoBehaviour {
     public float    blightRes;
     public float    stunRes;
     public float    bleedRes;
-    public int      initiative; 
+    public int      initiative;
+    public int[] range = new int[4] { 0, 0, 0, 0 };
 
 
     void Start() {

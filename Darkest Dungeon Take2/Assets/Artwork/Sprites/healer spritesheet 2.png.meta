@@ -4,10 +4,10 @@ timeCreated: 1522063016
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: healer spritesheet 2 idle
-    21300002: healer spritesheet 2 attack
-    21300004: healer spritesheet 2 dead
-    21300006: healer spritesheet 2 hit
+    21300000: healer2 idle
+    21300002: healer2 attack
+    21300004: healer2 dead
+    21300006: healer2 hit
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -84,7 +84,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: healer spritesheet 2 idle
+      name: healer2 idle
       rect:
         serializedVersion: 2
         x: 0
@@ -92,13 +92,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healer spritesheet 2 attack
+      name: healer2 attack
       rect:
         serializedVersion: 2
         x: 160
@@ -106,13 +106,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healer spritesheet 2 dead
+      name: healer2 dead
       rect:
         serializedVersion: 2
         x: 288
@@ -120,13 +120,13 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: healer spritesheet 2 hit
+      name: healer2 hit
       rect:
         serializedVersion: 2
         x: 128
@@ -134,14 +134,14 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
     outline: []
     physicsShape: []
-  spritePackingTag: healer 2
+  spritePackingTag: healer2
   userData: 
   assetBundleName: 
   assetBundleVariant: 

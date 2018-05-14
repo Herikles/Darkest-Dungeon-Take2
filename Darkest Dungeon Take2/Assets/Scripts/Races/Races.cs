@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
 public class Races : MonoBehaviour {
 
     public Support support;
@@ -11,8 +12,8 @@ public class Races : MonoBehaviour {
     public Assassine assassine;
 
     //string _className;
-    public int playerIndex;
-    public int enemyIndex;
+    //public int playerIndex;
+    //public int enemyIndex;
     public int health = 100;
     public int damage;
     public float hitChance;
@@ -22,17 +23,34 @@ public class Races : MonoBehaviour {
     public float bleedRes;
     public int initiative;
 
+    public int[] range = new int[4];
+
     public Sprite[] idleSprites;
     public Sprite[] attackSprites;
     public Sprite[] hitSprites;
     public Sprite[] deadSprites;
 
-    public void SetClass(string className) {
-        //Debug.Log("Still still Updating!");
+    public Sprite GetSprite(int index, bool player, bool attacker) {
+        Sprite sprite = new Sprite();
+        if (player == true) {
+            if (attacker == true) {
+                sprite = attackSprites[index];
+            } else {
+                sprite = hitSprites[index];
+            }
+        } else {
+            if(attacker == true) {
+                sprite = attackSprites[index];
+            } else {
+                sprite = hitSprites[index];
+            }
+        }
+        return sprite;
+    }
+
+    public void SetClass(int playerIndex) {
         Reroll();
-        if (className == "support") {
-            playerIndex = 3;
-            enemyIndex = 3;
+		if (playerIndex == 3) {
             health = support.health;
             damage = support.damage;
             hitChance = support.hitChance;
@@ -41,10 +59,12 @@ public class Races : MonoBehaviour {
             stunRes = support.stunRes;
             bleedRes = support.bleedRes;
             initiative = support.initiative;
+            for (int i = 0; i < 4; i++) {
+                range[i] = support.range[i];
+                Debug.Log("support " + i + ": " + support.range[i]);
+            }
         }
-        else if (className == "tank") {
-            playerIndex = 4;
-            enemyIndex = 4;
+		else if (playerIndex == 4) {
             health = tank.health;
             damage = tank.damage;
             hitChance = tank.hitChance;
@@ -54,9 +74,7 @@ public class Races : MonoBehaviour {
             bleedRes = tank.bleedRes;
             initiative = tank.initiative;
         }
-        else if (className == "damageDealer") {
-            playerIndex = 1;
-            enemyIndex = 1;
+		else if (playerIndex == 1) {
             health = damageDealer.health;
             damage = damageDealer.damage;
             hitChance = damageDealer.hitChance;
@@ -66,9 +84,7 @@ public class Races : MonoBehaviour {
             bleedRes = damageDealer.bleedRes;
             initiative = damageDealer.initiative;
         }
-        else if (className == "healer") {
-            playerIndex = 2;
-            enemyIndex = 2;
+		else if (playerIndex == 2) {
             health = healer.health;
             damage = healer.damage;
             hitChance = healer.hitChance;
@@ -78,9 +94,7 @@ public class Races : MonoBehaviour {
             bleedRes = healer.bleedRes;
             initiative = healer.initiative;
         }
-        else if (className == "assassine") {
-            playerIndex = 0;
-            enemyIndex = 0;
+		else if (playerIndex == 0) {
             health = assassine.health;
             damage = assassine.damage;
             hitChance = assassine.hitChance;
@@ -92,9 +106,8 @@ public class Races : MonoBehaviour {
         }
         else {
             playerIndex = 5;
-            enemyIndex = 5;
         }
-        Debug.Log("race = " + className);
+		Debug.Log("race = " + playerIndex);
     }
 
     public void Reroll() {

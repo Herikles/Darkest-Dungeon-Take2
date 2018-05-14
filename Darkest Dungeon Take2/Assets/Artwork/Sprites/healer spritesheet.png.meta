@@ -3,7 +3,58 @@ guid: 1d0764cf403123f48b3a16b99a2c8cec
 timeCreated: 1522063016
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: healer idle
+    21300002: healer spritesheet_1
+    21300004: healer spritesheet_2
+    21300006: healer spritesheet_3
+    21300008: healer spritesheet_4
+    21300010: healer spritesheet_5
+    21300012: healer spritesheet_6
+    21300014: healer spritesheet_7
+    21300016: healer spritesheet_8
+    21300018: healer spritesheet_9
+    21300020: healer spritesheet_10
+    21300022: healer spritesheet_11
+    21300024: healer spritesheet_12
+    21300026: healer spritesheet_13
+    21300028: healer spritesheet_14
+    21300030: healer spritesheet_15
+    21300032: healer spritesheet_16
+    21300034: healer spritesheet_17
+    21300036: healer spritesheet_18
+    21300038: healer spritesheet_19
+    21300040: healer spritesheet_20
+    21300042: healer spritesheet_21
+    21300044: healer spritesheet_22
+    21300046: healer spritesheet_23
+    21300048: healer spritesheet_24
+    21300050: healer spritesheet_25
+    21300052: healer spritesheet_26
+    21300054: healer spritesheet_27
+    21300056: healer spritesheet_28
+    21300058: healer spritesheet_29
+    21300060: healer spritesheet_30
+    21300062: healer spritesheet_31
+    21300064: healer spritesheet_32
+    21300066: healer spritesheet_33
+    21300068: healer spritesheet_34
+    21300070: healer attack
+    21300072: healer spritesheet_36
+    21300074: healer spritesheet_37
+    21300076: healer spritesheet_38
+    21300078: healer spritesheet_39
+    21300080: healer spritesheet_40
+    21300082: healer spritesheet_41
+    21300084: healer spritesheet_42
+    21300086: healer spritesheet_43
+    21300088: healer spritesheet_44
+    21300090: healer spritesheet_45
+    21300092: healer spritesheet_46
+    21300094: healer spritesheet_47
+    21300096: healer spritesheet_48
+    21300098: healer dead
+    21300100: healer hit
   externalObjects: {}
   serializedVersion: 4
   mipmaps:
@@ -78,7 +129,63 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: healer idle
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healer attack
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healer dead
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: healer hit
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
     outline: []
     physicsShape: []
   spritePackingTag: healer
